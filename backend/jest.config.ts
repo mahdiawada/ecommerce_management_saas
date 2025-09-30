@@ -4,7 +4,7 @@ const config: Config = {
   preset: 'ts-jest',                    // Specifies that we are using ts-jest for TypeScript
   testEnvironment: 'node',              // Specifies the test environment (e.g., jsdom or node)
   roots: ['<rootDir>'],                 // Specifies the root directory for Jest to look for test files
-  testMatch: ['<rootDir>/tests/**/*.ts'],
+  testMatch: ['<rootDir>/src/tests/**/*.ts'],
   testPathIgnorePatterns:["/node_modules/"],
   verbose: true,                        // Enables verbose output during testing
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'], // Specifies the files to collect coverage from
