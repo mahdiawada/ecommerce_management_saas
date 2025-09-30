@@ -33,12 +33,12 @@ export class CustomerBuilder {
         return this;
     }
 
-    public setEmail(email: string): CustomerBuilder {
+    public setEmail(email: string | undefined): CustomerBuilder {
         this.email = email;
         return this;
     }
 
-    public setInstagramUsername(instagramUsername: string): CustomerBuilder {
+    public setInstagramUsername(instagramUsername: string | undefined): CustomerBuilder {
         this.instagramUsername = instagramUsername;
         return this;
     }
@@ -53,7 +53,7 @@ export class CustomerBuilder {
         return this;
     }
 
-    public setBirthday(birthday: string): CustomerBuilder {
+    public setBirthday(birthday: string | undefined): CustomerBuilder {
         this.birthday = birthday;
         return this;
     }

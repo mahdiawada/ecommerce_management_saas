@@ -5,5 +5,12 @@ dotenv.config({path: path.join(__dirname, '../../.env')})
 
 export default {
     logDir: process.env.LOG_DIR || "./logs",
-    isDev:  process.env.NODE_ENV === "development"
+    isDev:  process.env.NODE_ENV === "development",
+    host: process.env.HOST || 'localhost',
+    user: process.env.USER,
+    db_port: process.env.DBPORT ? parseInt(process.env.DBPORT) : 5432,
+    password: process.env.DBPASSWORD,
+    database: process.env.DATABASE,
+    server_port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
+    server_host: process.env.HOST || 'localhost'
 }

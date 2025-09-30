@@ -5,7 +5,7 @@ import logger from "../../util/logger";
 import { FailedToCreateTable, InvalidElementException, NotFoundException } from "../../util/exceptions/repositoryException";
 import { InventoryMapper, PostgresInventory } from "../../mappers/Postgres/inventory.mapper";
 import { Product } from "model/product.model";
-import { PostgresProduct, ProductMapper } from "mappers/Postgres/product.mapper";
+import { PostgresProduct, ProductMapper } from "../../mappers/Postgres/product.mapper";
 
 
 const CREATE_INVENTORY_TABLE = `
